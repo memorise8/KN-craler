@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kidsnote Backup Console</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div id="app">
+  <header class="site-header">
+    <div>
+      <div class="brand-kicker">Kidsnote Backup Console</div>
+      <h1>가족 사진 백업 운영 콘솔</h1>
+    </div>
+    <div id="user-bar"></div>
+  </header>
+  <main id="view"></main>
+  <aside id="jobs-panel" hidden>
+    <div class="jobs-header">
+      <strong>백업 작업</strong>
+      <button id="jobs-toggle" type="button">접기</button>
+    </div>
+    <div id="jobs-list"></div>
+  </aside>
+  <div id="toast-host" aria-live="polite" aria-atomic="true"></div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
